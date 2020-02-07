@@ -13,9 +13,7 @@ public class Drums extends Instrument{
         return "Ba dum tshh";
     }
 
-    public double calculateMarkUp(){
-        return this.getRetailPrice() - this.getRetailPrice();
-    }
+
 
 
 

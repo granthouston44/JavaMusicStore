@@ -14,8 +14,5 @@ public class Guitar extends Instrument{
         return "A really good song on guitar is thunderstruck.....";
     }
 
-    public double calculateMarkUp(){
-        return getRetailPrice() - getRetailPrice();
-    }
 
 }

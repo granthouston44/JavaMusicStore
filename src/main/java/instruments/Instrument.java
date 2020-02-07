@@ -38,4 +38,9 @@ public abstract class Instrument implements IPlay, ISell {
     public double getRetailPrice() {
         return retailPrice;
     }
+
+    public double calculateMarkUp(){
+        return this.getRetailPrice() - this.getRetailPrice();
+    }
+
 }

@@ -16,7 +16,5 @@ public class Bass extends Instrument {
     }
 
 
-    public double calculateMarkUp(){
-        return this.getRetailPrice() - this.getRetailPrice();
-    }
+
 }

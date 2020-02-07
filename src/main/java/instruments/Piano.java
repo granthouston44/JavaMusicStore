@@ -17,8 +17,6 @@ public class Piano extends Instrument{
         return "mario 64 jolly rancher bay theme";
         }
 
-        public double calculateMarkUp(){
-        return this.getRetailPrice() - this.getRetailPrice();
-        }
+
 
 }
