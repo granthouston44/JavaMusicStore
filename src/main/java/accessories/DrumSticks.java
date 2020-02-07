@@ -1,9 +1,12 @@
 package accessories;
 
-public class DrumSticks {
+public class DrumSticks extends Accessory{
 
-    public DrumSticks(){
-
+    public DrumSticks(String name, double factoryPrice, double retailPrice, String description){
+    super(name, factoryPrice, retailPrice, description);
     }
+
+
+
 
 }
