@@ -28,5 +28,14 @@ public class Store {
         stock.remove(stockITem);
     }
 
+    public double calcMarkUpPotential(){
+        double total = 0;
+        for(int i =0; i < stock.size(); i++){
+            ISell currentItem = stock.get(i);
+            total += currentItem.calculateMarkUp();
+        }
+        return total;
+    }
+
 
 }

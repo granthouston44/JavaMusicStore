@@ -49,4 +49,17 @@ public class StoreTest {
         assertEquals(false, store.getStock().contains(strings));
     }
 
+    @Test
+    public void canUseCalcMarkUpInstrument(){
+        assertEquals(125, guitar.calculateMarkUp(),0.1);
+    }
+
+    @Test
+    public void canCalcMarkUp(){
+        store.addToStock(drums);
+        store.addToStock(guitar);
+        store.addToStock(strings);
+        assertEquals(290,store.calcMarkUpPotential(), 0.1);
+    }
+
 }
