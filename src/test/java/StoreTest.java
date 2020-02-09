@@ -33,7 +33,20 @@ public class StoreTest {
 
     @Test
     public void canRemoveFromStock(){
+        store.addToStock(drums);
+        store.addToStock(guitar);
+        store.addToStock(strings);
+        store.removeFromStock(strings);
+        assertEquals(2, store.getStock().size());
+    }
 
+    @Test
+    public void canRemoveSpecificFromStock(){
+        store.addToStock(drums);
+        store.addToStock(guitar);
+        store.addToStock(strings);
+        store.removeFromStock(strings);
+        assertEquals(false, store.getStock().contains(strings));
     }
 
 }
